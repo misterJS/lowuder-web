@@ -1,0 +1,189 @@
+{
+    "nav": {
+        "features": "Features",
+        "how": "How it Works",
+        "privacy": "Privacy",
+        "pricing": "Pricing",
+        "faq": "FAQ",
+        "waitlist": "Join Waitlist",
+        "demo": "Try Demo"
+    },
+    "hero": {
+        "title": "Panic Button + Emergency Crowdsourcing, without compromising privacy.",
+        "desc": "Lowuder helps people report critical incidents safely, verifies them with AI and a crowd score, then alerts nearby users with a 1-km SMS blast.",
+        "badge1": "EXIF strip & geo-jitter ±300–500 m",
+        "badge2": "AI moderation & deduplication",
+        "badge3": "Public heatmap (no exact pins)",
+        "ctaWaitlist": "Join Waitlist",
+        "ctaDemo": "See Demo",
+        "note": "* For safety, public locations are always blurred using a radius."
+    },
+    "mock": {
+        "title": "Lowuder Panic",
+        "desc": "Example screen: send a report with a photo, EXIF is removed automatically and location is jittered.",
+        "preview": "Photo Preview (EXIF removed)",
+        "geojitter": "Geo-jitter: ±300–500 m",
+        "moderation": "Moderation: dedup & anti-toxicity",
+        "status": "Status: Pending → Soft-Verified → Verified",
+        "button": "Send PANIC"
+    },
+    "designed": {
+        "title": "Designed for",
+        "rt": "Neighborhoods",
+        "campus": "Campus Communities",
+        "volunteers": "Disaster Volunteers",
+        "events": "Mass Events"
+    },
+    "features": {
+        "title": "Key features for rapid response",
+        "subtitle": "Minimize hoaxes, maximize safety.",
+        "privacy": {
+            "title": "Privacy by Default",
+            "desc": "EXIF stripping on media, geo-jitter for public users."
+        },
+        "ai": {
+            "title": "AI Verification",
+            "desc": "Duplicate detection, 1-km/10-min clustering, crowd score."
+        },
+        "heatmap": {
+            "title": "Safe Heatmap",
+            "desc": "Radius map—no exact public pins; only authorized officers see details."
+        },
+        "sms": {
+            "title": "Radius SMS Blast",
+            "desc": "If crowd score ≥ threshold, a 1-km SMS is sent to nearby users."
+        },
+        "contacts": {
+            "title": "Emergency Contacts",
+            "desc": "If not validated, send private SMS to user contacts first."
+        },
+        "audit": {
+            "title": "Audit Trail",
+            "desc": "Pending → Soft-Verified → Verified with decision logs."
+        }
+    },
+    "how": {
+        "title": "How Lowuder works",
+        "subtitle": "Concise, auditable, and resilient to provocations.",
+        "1": {
+            "title": "User taps PANIC",
+            "desc": "App removes EXIF, jitters location, then sends event."
+        },
+        "2": {
+            "title": "Server verifies",
+            "desc": "AI moderation: dedup, 1-km/10-min clustering, toxicity detection."
+        },
+        "3": {
+            "title": "Status & Gate",
+            "desc": "Pending → (Confirm/Dispute) → Soft-Verified/Verified based on crowd score."
+        },
+        "4": {
+            "title": "Information distribution",
+            "desc": "If threshold met: 1-km SMS blast. Else: private SMS + “needs confirmation” push."
+        },
+        "5": {
+            "title": "Heatmap",
+            "desc": "Public sees radius/heatmap; authorized officers can access details."
+        }
+    },
+    "flow": {
+        "title": "Flow Visual",
+        "desc": "Placeholder diagram — can be replaced with draw.io.",
+        "box1": "User PANIC",
+        "box2": "Server Heuristics + AI",
+        "box2b": "dedup • cluster • toxicity",
+        "box3": "Gate & Status",
+        "box4": "1-km SMS Blast",
+        "box4b": "or private SMS + push"
+    },
+    "privacy": {
+        "title": "Privacy & Security by design",
+        "subtitle": "We prioritize privacy by default.",
+        "min": {
+            "title": "Minimal Data",
+            "desc": "Only what's essential for safety; EXIF is removed.",
+            "b1": "Geo-jitter for public",
+            "b2": "Media hash for dedup",
+            "b3": "Granular officer access"
+        },
+        "abuse": {
+            "title": "Abuse-Resistance",
+            "desc": "Crowd score & moderation reduce provocations.",
+            "b1": "1-km / 10-min clusters",
+            "b2": "Toxicity detection",
+            "b3": "Evidence-based dispute/confirm"
+        },
+        "transp": {
+            "title": "Transparency",
+            "desc": "Auditable decisions for continuous improvement.",
+            "b1": "Per-report status logs",
+            "b2": "Area statistics",
+            "b3": "Open policies"
+        }
+    },
+    "pricing": {
+        "title": "Simple pricing for communities",
+        "subtitle": "Start free for small neighborhood trials.",
+        "starter": {
+            "name": "Starter",
+            "desc": "Small community trial",
+            "price": "Free",
+            "b1": "100 SMS/mo",
+            "b2": "Public heatmap",
+            "b3": "Basic moderation",
+            "cta": "Start"
+        },
+        "comm": {
+            "name": "Community",
+            "desc": "Full features for neighborhoods/communities",
+            "price": "Rp199k",
+            "per": "/month",
+            "b1": "2,000 SMS/mo",
+            "b2": "Crowd score & gate",
+            "b3": "Authorized officer access",
+            "cta": "Choose Plan"
+        },
+        "inst": {
+            "name": "Institution",
+            "desc": "Municipalities/Universities/Large events",
+            "price": "Contact",
+            "b1": "SLA & priority support",
+            "b2": "Custom SMS gateway integration",
+            "b3": "Training & regular audits",
+            "cta": "Contact Us"
+        }
+    },
+    "waitlist": {
+        "title": "Join Waitlist",
+        "subtitle": "Get early access and launch updates.",
+        "placeholder": "email@example.com",
+        "cta": "Sign up",
+        "note": "We’ll only send important updates. Unsubscribe anytime.",
+        "alert": "Thanks! We’ll notify"
+    },
+    "faq": {
+        "title": "Frequently asked questions",
+        "q1": "Is my location really safe?",
+        "a1": "For public, we always use heatmaps and geo-jitter. Only authorized officers can view details if necessary.",
+        "q2": "How do you prevent hoaxes?",
+        "a2": "AI moderation, media hash deduplication, and crowd score help filter invalid reports.",
+        "q3": "Can the SMS blast be configured?",
+        "a3": "Yes—thresholds, radius and quiet hours can be customized per community.",
+        "q4": "Is there a dashboard?",
+        "a4": "Yes. Officers can monitor clusters, status history and area statistics."
+    },
+    "footer": {
+        "ctaTitle": "Ready to help your neighborhood respond faster?",
+        "ctaSub": "Start with the free plan for your community.",
+        "join": "Join Waitlist",
+        "demo": "Open Demo",
+        "privacy": "Privacy Policy",
+        "terms": "Terms",
+        "contact": "Contact"
+    },
+    "lang": {
+        "en": "English",
+        "es": "Español",
+        "id": "Indonesia"
+    }
+}

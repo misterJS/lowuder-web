@@ -1,0 +1,189 @@
+{
+    "nav": {
+        "features": "Funciones",
+        "how": "Cómo funciona",
+        "privacy": "Privacidad",
+        "pricing": "Precios",
+        "faq": "FAQ",
+        "waitlist": "Unirse a la lista",
+        "demo": "Probar demo"
+    },
+    "hero": {
+        "title": "Botón de pánico + crowdsourcing de emergencias, sin comprometer la privacidad.",
+        "desc": "Lowuder permite reportar incidentes críticos de forma segura, los verifica con IA y puntaje de la multitud y alerta a quienes estén cerca con SMS de 1 km.",
+        "badge1": "Elimina EXIF y geo-jitter ±300–500 m",
+        "badge2": "Moderación con IA y deduplicación",
+        "badge3": "Heatmap público (sin pines exactos)",
+        "ctaWaitlist": "Unirse a la lista",
+        "ctaDemo": "Ver demo",
+        "note": "* Por seguridad, las ubicaciones públicas siempre se difuminan con un radio."
+    },
+    "mock": {
+        "title": "Lowuder Panic",
+        "desc": "Pantalla de ejemplo: envía un reporte con foto; EXIF se elimina y la ubicación se altera.",
+        "preview": "Vista previa (EXIF eliminado)",
+        "geojitter": "Geo-jitter: ±300–500 m",
+        "moderation": "Moderación: dedup y anti-toxicidad",
+        "status": "Estado: Pending → Soft-Verified → Verified",
+        "button": "Enviar PÁNICO"
+    },
+    "designed": {
+        "title": "Diseñado para",
+        "rt": "Vecindarios",
+        "campus": "Comunidades universitarias",
+        "volunteers": "Voluntariado de desastres",
+        "events": "Eventos masivos"
+    },
+    "features": {
+        "title": "Funciones clave para respuesta rápida",
+        "subtitle": "Minimiza bulos, maximiza seguridad.",
+        "privacy": {
+            "title": "Privacidad por defecto",
+            "desc": "Eliminación de EXIF y geo-jitter para público."
+        },
+        "ai": {
+            "title": "Verificación con IA",
+            "desc": "Detección de duplicados, clúster 1 km/10 min y puntaje de multitud."
+        },
+        "heatmap": {
+            "title": "Heatmap seguro",
+            "desc": "Mapa por radios—sin pines exactos para el público."
+        },
+        "sms": {
+            "title": "SMS por radio",
+            "desc": "Si el puntaje supera el umbral, SMS de 1 km."
+        },
+        "contacts": {
+            "title": "Contactos de emergencia",
+            "desc": "Si no valida, SMS privado a contactos primero."
+        },
+        "audit": {
+            "title": "Trazabilidad",
+            "desc": "Registro de decisiones: Pending → Soft-Verified → Verified."
+        }
+    },
+    "how": {
+        "title": "Cómo funciona Lowuder",
+        "subtitle": "Conciso, auditable y resistente a provocaciones.",
+        "1": {
+            "title": "Usuario toca PÁNICO",
+            "desc": "La app elimina EXIF, altera ubicación y envía evento."
+        },
+        "2": {
+            "title": "Servidor verifica",
+            "desc": "Moderación con IA: dedup, clúster 1 km/10 min, toxicidad."
+        },
+        "3": {
+            "title": "Estado y puerta",
+            "desc": "Pending → (Confirm/Dispute) → Soft-Verified/Verified."
+        },
+        "4": {
+            "title": "Distribución",
+            "desc": "Si cumple umbral: SMS 1 km. Si no: SMS privado + push."
+        },
+        "5": {
+            "title": "Heatmap",
+            "desc": "Público ve radios; oficiales autorizados ven detalles."
+        }
+    },
+    "flow": {
+        "title": "Flujo visual",
+        "desc": "Diagrama de ejemplo — puede sustituirse por draw.io.",
+        "box1": "Usuario PÁNICO",
+        "box2": "Heurísticas + IA",
+        "box2b": "dedup • clúster • toxicidad",
+        "box3": "Puerta y estado",
+        "box4": "SMS 1 km",
+        "box4b": "o SMS privado + push"
+    },
+    "privacy": {
+        "title": "Privacidad y seguridad desde el diseño",
+        "subtitle": "Priorizamos la privacidad por defecto.",
+        "min": {
+            "title": "Datos mínimos",
+            "desc": "Solo lo esencial; EXIF eliminado.",
+            "b1": "Geo-jitter para público",
+            "b2": "Hash de medios",
+            "b3": "Acceso granular"
+        },
+        "abuse": {
+            "title": "Anti-abuso",
+            "desc": "Puntaje de multitud y moderación.",
+            "b1": "Clúster 1 km / 10 min",
+            "b2": "Detección de toxicidad",
+            "b3": "Disputa/confirmación con evidencias"
+        },
+        "transp": {
+            "title": "Transparencia",
+            "desc": "Decisiones auditables.",
+            "b1": "Logs de estado",
+            "b2": "Estadísticas por zona",
+            "b3": "Políticas abiertas"
+        }
+    },
+    "waitlist": {
+        "title": "Unirse a la lista",
+        "subtitle": "Acceso anticipado y noticias.",
+        "placeholder": "email@ejemplo.com",
+        "cta": "Registrarse",
+        "note": "Solo enviaremos novedades importantes.",
+        "alert": "¡Gracias! Avisaremos a"
+    },
+    "faq": {
+        "title": "Preguntas frecuentes",
+        "q1": "¿Mi ubicación está realmente segura?",
+        "a1": "Para el público usamos heatmap y geo-jitter. Solo oficiales autorizados ven detalles.",
+        "q2": "¿Cómo evitan bulos?",
+        "a2": "Moderación con IA, hash y puntaje de multitud.",
+        "q3": "¿Se puede configurar el SMS?",
+        "a3": "Sí: umbral, radio y horas de silencio.",
+        "q4": "¿Hay panel?",
+        "a4": "Sí, con clústeres, historial y estadísticas."
+    },
+    "pricing": {
+        "title": "Precios simples para comunidades",
+        "subtitle": "Empieza gratis para pruebas pequeñas.",
+        "starter": {
+            "name": "Inicial",
+            "desc": "Prueba comunitaria pequeña",
+            "price": "Gratis",
+            "b1": "100 SMS/mes",
+            "b2": "Heatmap público",
+            "b3": "Moderación básica",
+            "cta": "Empezar"
+        },
+        "comm": {
+            "name": "Comunidad",
+            "desc": "Funciones completas",
+            "price": "Rp199k",
+            "per": "/mes",
+            "b1": "2.000 SMS/mes",
+            "b2": "Puntaje y puerta",
+            "b3": "Acceso autorizado",
+            "cta": "Elegir plan"
+        },
+        "inst": {
+            "name": "Institución",
+            "desc": "Municipios/Universidades/Eventos",
+            "price": "Contactar",
+            "b1": "SLA y soporte prioritario",
+            "b2": "Integración SMS personalizada",
+            "b3": "Formación y auditorías",
+            "cta": "Contáctanos"
+        }
+    },
+    "footer": {
+        "ctaTitle": "¿Listo para ayudar a tu vecindario?",
+        "ctaSub": "Empieza con el plan gratis.",
+        "join": "Unirse",
+        "demo": "Abrir demo",
+        "privacy": "Privacidad",
+        "terms": "Términos",
+        "contact": "Contacto"
+    },
+    "lang": {
+        "en": "English",
+        "es": "Español",
+        "id": "Indonesia"
+    }
+}

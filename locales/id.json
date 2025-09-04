@@ -1,0 +1,189 @@
+{
+    "nav": {
+        "features": "Fitur",
+        "how": "Cara Kerja",
+        "privacy": "Privasi",
+        "pricing": "Harga",
+        "faq": "FAQ",
+        "waitlist": "Masuk Waitlist",
+        "demo": "Coba Demo"
+    },
+    "hero": {
+        "title": "Panic Button + Crowdsourcing Darurat, tanpa kompromi privasi.",
+        "desc": "Lowuder membantu warga melaporkan kejadian genting secara aman, memverifikasi dengan AI dan skor kerumunan, lalu menginformasikan sekitar melalui SMS blast radius 1 km.",
+        "badge1": "EXIF strip & geo-jitter ±300–500 m",
+        "badge2": "Moderasi AI & deduplikasi",
+        "badge3": "Heatmap publik (tanpa pin akurat)",
+        "ctaWaitlist": "Gabung Waitlist",
+        "ctaDemo": "Lihat Demo",
+        "note": "* Untuk keamanan, lokasi publik akan selalu diburamkan menggunakan radius."
+    },
+    "mock": {
+        "title": "Lowuder Panic",
+        "desc": "Contoh layar: kirim laporan dengan foto, EXIF dihapus otomatis dan lokasi dijitter.",
+        "preview": "Preview Foto (EXIF dihapus)",
+        "geojitter": "Geo-jitter: ±300–500 m",
+        "moderation": "Moderasi: dedup & anti-toxicity",
+        "status": "Status: Pending → Soft-Verified → Verified",
+        "button": "Kirim PANIC"
+    },
+    "designed": {
+        "title": "Dirancang untuk",
+        "rt": "RT/RW",
+        "campus": "Komunitas Kampus",
+        "volunteers": "Relawan Kebencanaan",
+        "events": "Event Massal"
+    },
+    "features": {
+        "title": "Fitur utama untuk respons cepat",
+        "subtitle": "Minimalkan hoaks, maksimalkan keselamatan.",
+        "privacy": {
+            "title": "Privasi Otomatis",
+            "desc": "EXIF strip pada media, geolokasi dijitter untuk user publik."
+        },
+        "ai": {
+            "title": "Verifikasi AI",
+            "desc": "Deteksi duplikasi, klaster 1 km/10 menit, dan skor crowd."
+        },
+        "heatmap": {
+            "title": "Heatmap Aman",
+            "desc": "Peta radius—tanpa pin akurat untuk publik, hanya petugas yang melihat detil."
+        },
+        "sms": {
+            "title": "SMS Blast Radius",
+            "desc": "Jika skor crowd ≥ ambang, SMS 1 km di sekitar lokasi dikirim."
+        },
+        "contacts": {
+            "title": "Kontak Darurat",
+            "desc": "Jika belum tervalidasi, kirim SMS pribadi ke kontak pengguna lebih dulu."
+        },
+        "audit": {
+            "title": "Audit Trail",
+            "desc": "Status: Pending → Soft-Verified → Verified, lengkap dengan jejak keputusan."
+        }
+    },
+    "how": {
+        "title": "Bagaimana Lowuder bekerja",
+        "subtitle": "Ringkas, bisa diaudit, dan tahan provokasi.",
+        "1": {
+            "title": "User tekan PANIC",
+            "desc": "Aplikasi hilangkan EXIF, jitter lokasi, lalu kirim event."
+        },
+        "2": {
+            "title": "Server verifikasi",
+            "desc": "AI moderasi: dedup, klaster 1 km/10 menit, deteksi toksisitas."
+        },
+        "3": {
+            "title": "Status & Gate",
+            "desc": "Pending → (Confirm/Dispute) → Soft-Verified/Verified sesuai skor crowd."
+        },
+        "4": {
+            "title": "Distribusi informasi",
+            "desc": "Jika ambang terpenuhi: SMS blast 1 km. Jika tidak: SMS ke kontak pribadi + push ‘butuh konfirmasi’."
+        },
+        "5": {
+            "title": "Peta heatmap",
+            "desc": "Publik melihat radius/heatmap; petugas berwenang bisa akses detail."
+        }
+    },
+    "flow": {
+        "title": "Flow Visual",
+        "desc": "Placeholder diagram — bisa diganti embed draw.io nantinya.",
+        "box1": "User PANIC",
+        "box2": "Server Heuristics + AI",
+        "box2b": "dedup • cluster • toxicity",
+        "box3": "Gate & Status",
+        "box4": "SMS Blast 1 km",
+        "box4b": "atau SMS pribadi + push"
+    },
+    "privacy": {
+        "title": "Privasi & Keamanan sejak desain",
+        "subtitle": "Kami mengutamakan privacy by default.",
+        "min": {
+            "title": "Minim Data",
+            "desc": "Hanya data yang diperlukan untuk keselamatan; EXIF dihapus.",
+            "b1": "Geo-jitter untuk publik",
+            "b2": "Hash media untuk dedup",
+            "b3": "Akses granular untuk petugas"
+        },
+        "abuse": {
+            "title": "Anti Penyalahgunaan",
+            "desc": "Skor kerumunan & moderasi mencegah provokasi.",
+            "b1": "Klaster 1 km / 10 menit",
+            "b2": "Deteksi toksisitas teks",
+            "b3": "Dispute/confirm berbasis bukti"
+        },
+        "transp": {
+            "title": "Transparansi",
+            "desc": "Jejak keputusan bisa diaudit untuk peningkatan berkelanjutan.",
+            "b1": "Log status setiap laporan",
+            "b2": "Statistik per wilayah",
+            "b3": "Kebijakan terbuka"
+        }
+    },
+    "pricing": {
+        "title": "Harga sederhana untuk komunitas",
+        "subtitle": "Mulai gratis untuk uji coba RT/komunitas kecil.",
+        "starter": {
+            "name": "Starter",
+            "desc": "Uji coba komunitas kecil",
+            "price": "Gratis",
+            "b1": "100 SMS/bln",
+            "b2": "Heatmap publik",
+            "b3": "Moderasi dasar",
+            "cta": "Mulai"
+        },
+        "comm": {
+            "name": "Community",
+            "desc": "Fitur lengkap untuk RT/RW/Komunitas",
+            "price": "Rp199k",
+            "per": "/bulan",
+            "b1": "2.000 SMS/bln",
+            "b2": "Skor crowd & gate",
+            "b3": "Akses petugas berwenang",
+            "cta": "Pakai Paket Ini"
+        },
+        "inst": {
+            "name": "Institution",
+            "desc": "Pemda/Universitas/Event besar",
+            "price": "Hubungi",
+            "b1": "SLA & dukungan prioritas",
+            "b2": "Integrasi SMS gateway pilihan",
+            "b3": "Pelatihan & audit berkala",
+            "cta": "Hubungi Kami"
+        }
+    },
+    "waitlist": {
+        "title": "Gabung Waitlist",
+        "subtitle": "Dapatkan akses awal dan kabar rilis.",
+        "placeholder": "email@contoh.com",
+        "cta": "Daftar",
+        "note": "Kami hanya akan mengirim info penting. Bisa berhenti kapan saja.",
+        "alert": "Terima kasih! Kami akan mengabari"
+    },
+    "faq": {
+        "title": "Pertanyaan yang sering ditanyakan",
+        "q1": "Apakah lokasi saya benar-benar aman?",
+        "a1": "Untuk publik, kami selalu menggunakan heatmap dan geo-jitter. Hanya petugas berwenang yang bisa melihat detail bila diperlukan.",
+        "q2": "Bagaimana mencegah hoaks?",
+        "a2": "Moderasi AI, hash deduplikasi media, dan skor kerumunan membantu menapis laporan yang tidak valid.",
+        "q3": "Apakah SMS blast bisa diatur?",
+        "a3": "Ya—ambang skor, radius, serta jam tenang dapat dikonfigurasi untuk tiap komunitas.",
+        "q4": "Apakah ada dashboard?",
+        "a4": "Ada. Petugas dapat memantau klaster, riwayat status, dan statistik wilayah."
+    },
+    "footer": {
+        "ctaTitle": "Siap bantu lingkungan jadi lebih sigap?",
+        "ctaSub": "Mulai dengan versi gratis untuk RT/komunitas Anda.",
+        "join": "Gabung Waitlist",
+        "demo": "Buka Demo",
+        "privacy": "Kebijakan Privasi",
+        "terms": "Ketentuan",
+        "contact": "Kontak"
+    },
+    "lang": {
+        "en": "Inggris",
+        "es": "Spanyol",
+        "id": "Indonesia"
+    }
+}
