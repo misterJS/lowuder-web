@@ -6,17 +6,21 @@ import es from "@/locales/es.json"
 import id from "@/locales/id.json"
 
 export type Locale = "en" | "es" | "id"
-const DICTS = { en, es, id } as const
+
+/** Tipe kamus diambil dari en.json (harus jadi source of truth) */
 type Messages = typeof en
 
-// Deep key type for "a.b.c"
+// ----- util: type untuk key bertingkat "a.b.c"
 type Join<K, P> = K extends string | number
   ? P extends string | number
     ? `${K}.${P}`
     : never
   : never
 type Paths<T> = T extends object
-  ? { [K in keyof T]-?: K extends string ? (T[K] extends object ? Join<K, Paths<T[K]>> : K) : never }[keyof T]
+  ? { [K in keyof T]-?: K extends string
+      ? (T[K] extends object ? Join<K, Paths<T[K]>> : K)
+      : never
+    }[keyof T]
   : never
 
 type I18nCtx = {
@@ -26,6 +30,26 @@ type I18nCtx = {
 }
 
 const Ctx = createContext<I18nCtx | null>(null)
+
+// Pastikan semua locale punya bentuk yang sama dengan en.json
+const DICTS = {
+  en,
+  es,
+  id,
+} satisfies Record<Locale, Messages>
+
+/** Ambil nilai dari object berdasarkan path ["a","b","c"] tanpa any */
+function getByPath(obj: unknown, path: string[]): unknown {
+  let cur: unknown = obj
+  for (const seg of path) {
+    if (cur && typeof cur === "object" && seg in (cur as Record<string, unknown>)) {
+      cur = (cur as Record<string, unknown>)[seg]
+    } else {
+      return undefined
+    }
+  }
+  return cur
+}
 
 export function I18nProvider({ children }: { children: React.ReactNode }) {
   const [locale, setLocale] = useState<Locale>(() => {
@@ -40,15 +64,16 @@ export function I18nProvider({ children }: { children: React.ReactNode }) {
   }, [locale])
 
   const dict = DICTS[locale]
+
   const t = useMemo(
     () => (key: Paths<Messages>) => {
-      const val = key.split(".").reduce<any>((o, k) => (o ? o[k] : undefined), dict)
-      return (val as string) ?? key
+      const val = getByPath(dict, key.split("."))
+      return typeof val === "string" ? val : key
     },
     [dict]
   )
 
-  const value = useMemo<I18nCtx>(() => ({ locale, setLocale, t }), [locale, t])
+  const value: I18nCtx = useMemo(() => ({ locale, setLocale, t }), [locale, t])
   return <Ctx.Provider value={value}>{children}</Ctx.Provider>
 }
 
